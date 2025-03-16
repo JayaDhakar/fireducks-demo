@@ -29,7 +29,7 @@ def main():
     t1 = time.time()
     df = df.sort_values("column_a")._evaluate()
     t2 = time.time()
-    df.to_csv("sorted.csv")  # No _evaluate() needed
+    df.to_csv("sorted.csv") 
     t3 = time.time()
 
     print("Time to read CSV:", t1 - t0, flush=True)
@@ -49,7 +49,7 @@ def main():
         print("Error: 'target_column' still missing! Check CSV formatting.", flush=True)
         return  # Exit the function to prevent further errors
 
-    # 🔥 FIX: Use Pandas for Aggregation
+    # FIX: Use Pandas for Aggregation
     try:
         print("Converting FireDucks DataFrame to Pandas for aggregation...", flush=True)
         pd_df = fd_df.to_pandas()  # Convert to Pandas
@@ -57,7 +57,7 @@ def main():
         # Perform aggregation with Pandas
         aggregated = pd_df.groupby("column_a")["target_column"].agg(["sum", "mean"]).reset_index()
 
-        print("Aggregation successful! Here is the result:\n", aggregated, flush=True)  # ✅ FIXED LINE
+        print("Aggregation successful! Here is the result:\n", aggregated, flush=True) 
 
         # Convert back to FireDucks DataFrame if needed
         fd_aggregated = fpd.from_pandas(aggregated)._evaluate()
