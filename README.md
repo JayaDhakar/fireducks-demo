@@ -1,6 +1,6 @@
 # fireducks-demo
 
-# FireDucks Lazy Execution Demo
+## FireDucks Lazy Execution Demo
 
 This repository demonstrates the usage of FireDucks for lazy execution, benchmarking, and feature engineering.
 
