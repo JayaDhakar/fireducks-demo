@@ -1,0 +1,16 @@
+--- FireDucks Lazy Execution Demo ---
+Time to read CSV: 0.0044879913330078125
+Time to sort values: 0.0018720626831054688
+Time to save to CSV: 0.001211404800415039
+Benchmark mode enabled.
+Updated FireDucks DataFrame Columns: Index(['column_a', 'column_b', 'target_column'], dtype='object')
+Converting FireDucks DataFrame to Pandas for aggregation...
+Aggregation successful! Here is the result:
+    column_a  sum   mean
+0         1  100  100.0
+1         2  200  200.0
+2         3  300  300.0
+3         4  400  400.0
+4         5  500  500.0
+Multi-target encoding successful.
+Feature engineering operations completed.
